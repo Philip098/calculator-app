@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   .contain{
+    margin: 200px 600px;
+    border: 1px black;
+    
+   } 
+   input{
+    padding: 10px;
+
+    
+   }
+   button{
+    margin-top: 10px;
+   }
+   .textarea{
+   border: solid pink;
+   }
+  </style>
+</head>
+<body>
+  <form class="contain">
+    <input type="text" id="inputform">
+    <input type="text" id="form">
+    <button type="button" name="operators">-</button>
+    <button type="button" name="operator">x</button>
+    <button type="button" name="operands">/</button>
+    <button type="button"  class="button" onclick="myCalc()">+</button>
+    <button> reset</button>
+    <textarea class="textarea " rows="5" oninput="getlengthFunction()" ></textarea>
+
+    <span>0</span> of 100 characters
+    <h1 class="result">Result :</h1>
+    <select onchange="genderFunction()" id="gender">
+      <option value="male"> male </option>
+      <option value="female">female</option>
+    </select>
+    <span class="showGender"> 100 </span>
+  </form>
+  
+  <script src="project.js"></script>
+</body>
+</html>
